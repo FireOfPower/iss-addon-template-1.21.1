@@ -1,4 +1,4 @@
-package net.fireofpower.openpocketdimension;
+package net.fireofpower.template;
 
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
@@ -6,22 +6,18 @@ import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.neoforged.neoforge.registries.DeferredRegister;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
-@Mod(net.fireofpower.openpocketdimension.OpenPocketDimension.MODID)
-public class OpenPocketDimension {
+@Mod(Template.MODID)
+public class Template {
     public static final String MODID = "openpocketdimension";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public OpenPocketDimension(IEventBus modEventBus, ModContainer modContainer) {
+    public Template(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -35,6 +31,6 @@ public class OpenPocketDimension {
 
     public static ResourceLocation id(@NotNull String path)
     {
-        return ResourceLocation.fromNamespaceAndPath(net.fireofpower.openpocketdimension.OpenPocketDimension.MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(Template.MODID, path);
     }
 }

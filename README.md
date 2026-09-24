@@ -1,1 +1,1 @@
-An Iron's Spellbooks addon mod that prevents the pocket dimension's snapping effect
+TEMPLATE

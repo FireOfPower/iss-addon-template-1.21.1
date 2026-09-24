@@ -1,4 +1,4 @@
-package net.fireofpower.openpocketdimension.mixins;
+package net.fireofpower.template.mixins;
 
 import net.neoforged.fml.loading.FMLLoader;
 import org.objectweb.asm.tree.ClassNode;
